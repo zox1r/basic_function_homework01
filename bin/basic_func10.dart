@@ -4,7 +4,10 @@
 
 //  Return the negative value of a.
 int func(int a) {
-  return 0;
+ 
+  return a * -1;
 }
 
-void main() {}
+void main() {
+  print(func(3));
+}
