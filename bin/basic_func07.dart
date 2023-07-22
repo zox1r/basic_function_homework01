@@ -6,7 +6,12 @@
 // Create a variable called ‘answer’ and assign it the sum of the three digits.
 // return the sum of the digits.
 int func(int number) {
-  return 0;
+  int x = number ~/ 100;
+  int y = number % 100 ~/ 10 ;
+  int z = number % 10;
+  return z + y + x;
 }
 
-void main() {}
+void main() {
+  print(func(456));
+}
